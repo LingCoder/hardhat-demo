@@ -10,9 +10,9 @@
 <img src="https://img.shields.io/badge/@openzeppelin-^4.8.0-green"/>
 </div>
 
-English | [简体中文](./README_zh.md)
+[English](./README.md) | 简体中文
 
-## Quick Start
+## 快速开始
 
 ```bash
 
@@ -22,20 +22,27 @@ yarn install
 
 ```
 
-## Quick Commands
+## 快捷命令
 
 ```bash
+    # 执行合约编译
     yarn compile
+    # 执行合约部署
     yarn deploy
+    # 执行合约测试用例
     yarn test
+    # 合约测试覆盖率
     yarn test:coverage
+    # 合约大小检测
     yarn test:size-contracts
+    # 合约格式化检测
     yarn lint:sol
+    # 合约格式化执行
     yarn lint:sol:fix
 
 ```
 
-## Hardhat Commands
+## Hardhat命令
 
 ```bash
 npx hardhat accounts
@@ -57,15 +64,15 @@ npx solhint 'contracts/**/*.sol' --fix
 
 ```
 
-## Other Commands
+## 其他命令
 
-Deploy the contract to a specific network
+部署合约到特定网络
 
 ```shell
   npx hardhat run --network rinkeby deploy/deploy.ts
 ```
 
-Validate deployed contracts
+验证已部署的合约
 
 ```shell
 npx hardhat verify --network rinkeby "DEPLOYED_CONTRACT_ADDRESS" "constructor-args1" "constructor-args2"
